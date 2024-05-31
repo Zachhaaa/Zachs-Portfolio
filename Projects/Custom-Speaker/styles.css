@@ -1,0 +1,21 @@
+.title-image {
+  position: relative;
+  text-align: center;
+}
+.main-image {
+  width: 800px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+h1 {
+  position: absolute;
+  left: 0;
+  bottom: 40px; 
+  margin: 0;
+  padding: 8px 8px 8px 20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+
+}
