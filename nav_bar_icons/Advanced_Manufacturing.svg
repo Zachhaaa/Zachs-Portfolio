@@ -9,6 +9,9 @@
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="Advanced Manufacturing.svg"
+   inkscape:export-filename="G:\new downloads\Print_Nozzle_Icon.png"
+   inkscape:export-xdpi="18.75"
+   inkscape:export-ydpi="18.75"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -45,13 +48,13 @@
      id="layer1">
     <path
        id="path888"
-       style="fill:none;stroke:#ffffff;stroke-width:15;stroke-linecap:round;paint-order:markers fill stroke;stop-color:#000000"
-       d="M 98.851573,488.06057 H 373.31588 v 0 c 21.93783,9e-4 39.72248,-17.78287 39.72266,-39.7207 9e-4,-21.93859 -17.78407,-39.72356 -39.72266,-39.72266 H 119.72197 v 0 c -21.93706,-1.8e-4 -39.720515,-17.78364 -39.720698,-39.7207 -9e-4,-21.93783 17.782872,-39.72248 39.720698,-39.72266 h 96.55538 v 0 c 21.93783,8.9e-4 39.72247,-17.78288 39.72265,-39.72071"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       d="M 98.851573,477.44306 H 373.31588 v 0 c 21.93783,9e-4 39.72248,-17.78287 39.72266,-39.7207 9e-4,-21.93859 -17.78407,-39.72356 -39.72266,-39.72266 H 119.72197 v 0 c -21.93706,-1.8e-4 -39.720515,-17.78364 -39.720698,-39.7207 -9e-4,-21.93783 17.782872,-39.72248 39.720698,-39.72266 h 96.55538 v 0 c 21.93783,8.9e-4 39.72247,-17.78288 39.72265,-39.72071"
        sodipodi:nodetypes="cccccccccccc" />
     <path
        id="rect16808"
-       style="fill:none;stroke:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
-       d="m 139.76924,10 v 164.33616 l 102.67607,115.11698 h 27.10938 L 372.23076,174.33616 V 10 Z"
+       style="fill:none;stroke:#ffffff;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       d="m 139.76924,15 0,138.38224 102.67607,115.11698 h 27.10938 L 372.23076,153.38224 372.23076,15 Z"
        sodipodi:nodetypes="ccccccc" />
   </g>
 </svg>

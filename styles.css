@@ -19,9 +19,9 @@ h1 {
 }
 .nav-bar{
   margin: 0;
-  margin-right: 15px;
+  margin-right: 20px;
   padding: 0; 
-  padding-right: 15px;
+  padding-right: 20px;
   border-right: 3px solid rgb(220, 168, 255);
   display: inline-block;
   position: sticky;
