@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Projects.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="56.75"
+     inkscape:cy="57"
+     inkscape:window-width="3840"
+     inkscape:window-height="2036"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-midpoints="false"
+     inkscape:object-paths="true" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect15313"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,12.875,0,1 @ F,0,0,1,0,11.667262,0,1 | F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect8247"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,62.665952,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="0"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       d="M 359.91737,228.01954 218.35511,399.79363 152.08263,323.45054"
+       id="path12342"
+       sodipodi:nodetypes="ccc" />
+    <path
+       id="rect13832"
+       style="color:#000000;fill:#ffffff;-inkscape-stroke:none;paint-order:markers fill stroke"
+       d="M 91.644531,0 C 74.840457,0 61,13.840457 61,30.644531 V 481.35547 C 61,498.15954 74.840459,512 91.644531,512 H 420.35547 C 437.15954,512 451,498.15954 451,481.35547 V 145.78516 a 31.083,31.083 67.5 0 0 -9.104,-21.979 L 326.33984,8.2500001 A 28.167262,28.167262 22.5 0 0 306.42258,0 Z m 0,20 H 298.08984 v 102.26562 c 0,16.80408 13.84047,30.64454 30.64454,30.64454 H 431 V 481.35547 C 431,487.42577 426.42577,492 420.35547,492 H 91.644531 C 85.574231,492 81,487.42577 81,481.35547 V 30.644531 C 81,24.574233 85.574233,20 91.644531,20 Z m 226.445309,8.28125 104.62891,104.62891 h -93.98437 c -6.07029,0 -10.64454,-4.57425 -10.64454,-10.64454 z"
+       inkscape:path-effect="#path-effect15313"
+       inkscape:original-d="M 91.644531,0 C 74.840457,0 61,13.840457 61,30.644531 V 481.35547 C 61,498.15954 74.840459,512 91.644531,512 H 420.35547 C 437.15954,512 451,498.15954 451,481.35547 V 132.91016 L 318.08984,0 Z m 0,20 H 298.08984 v 102.26562 c 0,16.80408 13.84047,30.64454 30.64454,30.64454 H 431 V 481.35547 C 431,487.42577 426.42577,492 420.35547,492 H 91.644531 C 85.574231,492 81,487.42577 81,481.35547 V 30.644531 C 81,24.574233 85.574233,20 91.644531,20 Z m 226.445309,8.28125 104.62891,104.62891 h -93.98437 c -6.07029,0 -10.64454,-4.57425 -10.64454,-10.64454 z" />
+  </g>
+</svg>
