@@ -69,14 +69,11 @@ fetch('/nav-bar.html')
 })
 .then(data => {
   navBarHTML = data;
-  navBarMQ();
-
 })
 .catch(error => {
   console.error('There has been a problem with your fetch operation:', error);
 });
 
+document.addEventListener('DOMContentLoaded', navBarMQ)
 
-window.addEventListener('resize', e => {
-  navBarMQ();
-})
+window.addEventListener('resize', navBarMQ)
