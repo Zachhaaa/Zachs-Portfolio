@@ -4,7 +4,7 @@ let topBar   = document.getElementById('top-bar');
 let menuIcon = document.createElement('img');
 let main = document.querySelector('main');
 
-menuIcon.src = './General-Icons/Menu.svg';
+menuIcon.src = '/General-Icons/Menu.svg';
 menuIcon.style.width = '50px';
 menuIcon.onclick = menuIconClick
 
@@ -63,7 +63,7 @@ function menuIconClick() {
   }
 }
 
-fetch('./nav-bar.html')
+fetch('/nav-bar.html')
 .then(response => {
   return response.text();
 })
