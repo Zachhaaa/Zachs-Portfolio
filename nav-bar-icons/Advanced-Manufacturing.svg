@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Advanced Manufacturing.svg"
+   inkscape:export-filename="G:\new downloads\Print-Nozzle-Icon.png"
+   inkscape:export-xdpi="18.75"
+   inkscape:export-ydpi="18.75"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="false"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-global="false"
+     inkscape:zoom="1.6953125"
+     inkscape:cx="-46.009217"
+     inkscape:cy="219.42857"
+     inkscape:window-width="3840"
+     inkscape:window-height="2036"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path888"
+       style="fill:none;stroke:#ffffff;stroke-width:25;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       d="M 98.851573,477.44306 H 373.31588 v 0 c 21.93783,9e-4 39.72248,-17.78287 39.72266,-39.7207 9e-4,-21.93859 -17.78407,-39.72356 -39.72266,-39.72266 H 119.72197 v 0 c -21.93706,-1.8e-4 -39.720515,-17.78364 -39.720698,-39.7207 -9e-4,-21.93783 17.782872,-39.72248 39.720698,-39.72266 h 96.55538 v 0 c 21.93783,8.9e-4 39.72247,-17.78288 39.72265,-39.72071"
+       sodipodi:nodetypes="cccccccccccc" />
+    <path
+       id="rect16808"
+       style="fill:none;stroke:#ffffff;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+       d="m 139.76924,15 0,138.38224 102.67607,115.11698 h 27.10938 L 372.23076,153.38224 372.23076,15 Z"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+</svg>
