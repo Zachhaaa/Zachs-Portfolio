@@ -4,7 +4,6 @@
 }
 #thumbnail {
   width: 100%;
-  height: 32vw;
   object-fit: cover;
   object-position: 0 35%;
   border-radius: 10px;
@@ -24,11 +23,26 @@ h2 {
   border-radius: 4px;
   background-image: linear-gradient(270deg, rgb(3, 110, 164), rgb(195, 45, 211));
 }
+.image-text-section div {
+  width: calc(50% - 20px); 
+}
 .image {
-  width: 50%;
+  width: calc(50% - 20px);
   height: 45%;
   object-fit: cover;
   border-radius: 10px;
+}
+@media (max-width: 950px) {
+  .image-text-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-text-section div {
+    width: calc(100% - 20px); 
+  }
+  .image {
+    width: calc(100% - 20px);
+  }
 }
 p {
   font-size: 20px;
