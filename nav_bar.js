@@ -63,7 +63,7 @@ function menuIconClick() {
   }
 }
 
-fetch('./nav_bar.html')
+fetch('nav_bar.html')
 .then(response => {
   return response.text();
 })
