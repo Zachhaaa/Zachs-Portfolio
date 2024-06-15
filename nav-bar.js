@@ -10,7 +10,7 @@ menuIcon.onclick = menuIconClick
 
 let topBarMenuState = false;
 let menuIconState = false;
-let menuItemStates = Array(8).fill(false);
+let menuItemStates = Array(13).fill(false);
 let navBarHTML = '';
 
 const maxWidth = 750;
@@ -69,11 +69,16 @@ fetch('/nav-bar.html')
 })
 .then(data => {
   navBarHTML = data;
+  navBarMQ();
 })
 .catch(error => {
   console.error('There has been a problem with your fetch operation:', error);
 });
 
-document.addEventListener('DOMContentLoaded', navBarMQ)
+document.addEventListener('DOMContentLoaded', e => {
+  navBarMQ();
+})
 
-window.addEventListener('resize', navBarMQ)
+window.addEventListener('resize', e => {
+  navBarMQ();
+})

@@ -11,6 +11,17 @@
 h2 {
   font-size: 32px;
 }
+h3 {
+  font-size: 24px; 
+  margin-left: 20px;
+}
+i {
+  margin-left: 30px;
+  font-size: 20px;
+  Color: rgb(200, 200, 200);
+  display: block;
+  line-height: 150%;
+}
 .image-text-section {
   display: flex;
   justify-content: space-between;
@@ -44,11 +55,17 @@ h2 {
     width: calc(100% - 20px);
   }
 }
+a {
+  color: rgb(47, 131, 233);
+}
+a:hover {
+  color: rgb(106, 167, 242); 
+}
 p {
   font-size: 20px;
 }
 li {
-  font-size: 18px;
+  font-size: 20px;
 }
 .collage {
   display: flex;

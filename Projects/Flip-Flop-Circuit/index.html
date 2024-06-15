@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Flop Circuit</title>
+  <link rel="stylesheet" type="text/css" href="/theme.css">
+  <link rel="stylesheet" type="text/css" href="/project-page-styles.css">
+  <!-- If the page needs Math styling: <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script> -->
+</head>
+<body>
+  <div>
+  <ul id="nav-bar"></ul>
+  <main>
+    <div id="top-bar">
+      <a href="/index.html"><img src="/General-Icons/Home.svg" alt="Home Icon" id="home-icon"></a>
+      <img id="me-icon" src="/ME.jpeg" alt="Icon of me">
+    </div>
+    <ul id="nav-menu"></ul>
+    <h1>Flip Flop Circuit</h1>
+    <img id="thumbnail" src="IMG-3433.JPG" alt="thumbnail">
+    <h2>What is a Flip Flop Circuit?</h2>
+    <div class="image-text-section">
+      <div>
+        <p style="font-weight: bold;">A flip flop is a circuit that can hold a state after a short pulse sets it.</p>
+        <p>While that might not make sense for some, the video will helpfully explain it.</p>
+        <p>
+          Looking at just one of the leds, lets say the top one, notice how it can be turned on
+          indefinitly with a short click of a button. This is called "setting" the flip flop.
+        </p>
+        <p>
+          If we want to turn the top one off, we can click the other button. This is called "reseting"
+          the flip flop.
+        </p>
+      </div>
+      <video class="image" src="Flip-Flop-Circuit.mp4" autoplay muted loop></video>
+    </div>
+    <h2>Why 2 LEDS?</h2>
+    <div class="image-text-section">
+      <div>
+        <p>
+          The reason for two leds is to represent the two outputs of the flip flop 
+          which are often represented with Q and <span style="text-decoration: overline;">Q</span>
+          (Q not). <span style="text-decoration: overline;">Q</span> will always be the oppisite of Q.
+        </p>
+      </div>
+      <div>
+        <img width="100%" src="Flip-Flop-Logic-Gate-Schematic.svg" alt="Flip Flop Logic Gate Schematic">
+        <p>Flip flop logic gate schematic</p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <h2>Development</h2>
+    <h3>Testing / Prototyping</h3>
+    <div class="image-text-section">
+      <div>
+        <p>
+          Using a breadboard. I tested different logic gate designs to see which worked 
+          and didn't. Then I tested made my first complete prototype on a breadboard.
+        </p>
+        </div>
+      <video class="image" src="Prototyping-Timelapse.mp4" autoplay muted loop></video>
+    </div>
+    <h3>Drawing the circuit</h3>
+    <p>
+      From my breadboard prototype, I drew a schematic using 
+      <a href="/CAD/What-Is-CAD/index.html#kicad">KiCAD</a>
+    </p>
+    <img width="100%" src="Flip-Flop-Schematic.png" alt="Flip Flop Schematic">
+    <div class="image-text-section">
+      <div>
+        <p>
+          From the schematic. I added lines to a picture of the components
+          placed on an unsoldered breadboard to plan out my solder paths before hand.
+        </p>
+      </div>
+      <img class="image" src="Flip-Flop-Soldering-Diagram.jpg" alt="Soldering Diagram">
+    </div>
+    <h3>Soldering</h3>
+    <div class="image-text-section">
+      <div>
+        <p>
+          As you can see, the traces I soldered on the bottom are a 
+          mirror image of the diagram I used above.
+        </p>
+      </div>
+      <img class="image" src="IMG-3432.JPG" alt="Solder traces">
+    </div>
+    <div class="divider"></div>
+    <h2>Result</h2>
+    <div class="collage">
+      <img width="80%" src="IMG-3433.JPG" alt="Result">
+    </div>
+  </main>
+</div>
+</body>
+<script src="/nav-bar.js"></script>
+</html>

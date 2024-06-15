@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="330"
+   viewBox="0 0 512 330"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Flip-Flop-Logic-Gate-Schematic.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-center="true"
+     inkscape:snap-page="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true"
+     inkscape:lockguides="true"
+     inkscape:zoom="0.99298784"
+     inkscape:cx="-372.61282"
+     inkscape:cy="199.39821"
+     inkscape:window-width="3840"
+     inkscape:window-height="2036"
+     inkscape:window-x="-12"
+     inkscape:window-y="-12"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g41010"
+       transform="matrix(1.1349115,0,0,1.1355271,-28.990752,-98.952239)"
+       style="stroke-width:0.880887">
+      <path
+         id="rect911"
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 189.41783,100.58373 v 90.79309 h 46.47333 v -0.002 a 45.329138,45.396371 0 0 0 45.32826,-45.39549 45.329138,45.396371 0 0 0 -45.32826,-45.3955 z" />
+      <ellipse
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         id="path1325"
+         cx="292.73138"
+         cy="145.97932"
+         rx="11.511976"
+         ry="11.529051" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 304.24337,145.97933 H 414.79831"
+         id="path1760" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 78.86289,123.3711 H 189.41783"
+         id="path1877" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 142.59585,168.58945 h 46.82198"
+         id="path1881"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="path2355"
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 189.41783,282.88137 v 90.79309 h 46.47333 v -0.002 a 45.329138,45.396371 0 0 0 45.32826,-45.39549 45.329138,45.396371 0 0 0 -45.32826,-45.3955 z" />
+      <ellipse
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         id="ellipse2357"
+         cx="292.73138"
+         cy="328.27695"
+         rx="11.511976"
+         ry="11.529051" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 304.24337,328.27697 H 414.79831"
+         id="path2359" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 78.86289,350.88709 H 189.41783"
+         id="path2361" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 142.59585,305.66874 h 46.82198"
+         id="path2445"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 142.59585,305.66874 V 270.242 L 345.5887,215.85023 v -69.8709"
+         id="path2560" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 142.59585,168.58945 v 35.42666 l 202.99285,54.39163 v 69.87072"
+         id="path2562" />
+      <circle
+         style="fill:#ffffff;stroke:none;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         id="path2746"
+         cx="345.58871"
+         cy="145.97932"
+         r="11.037552" />
+      <circle
+         style="fill:#ffffff;stroke:none;stroke-width:7.0471;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         id="circle2874"
+         cx="345.58871"
+         cy="328.27847"
+         r="11.037552" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.880887"
+         x="28.458313"
+         y="148.4248"
+         id="text14566"><tspan
+           sodipodi:role="line"
+           id="tspan14564"
+           x="28.458313"
+           y="148.4248"
+           style="stroke-width:0.880887">S</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.880887"
+         x="21.827454"
+         y="375.9408"
+         id="text23801"><tspan
+           sodipodi:role="line"
+           id="tspan23799"
+           x="21.827454"
+           y="375.9408"
+           style="stroke-width:0.880887">R</tspan></text>
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.40444;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 27.773667,316.70628 H 75.319716"
+         id="path32566" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.40444;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="M 27.773667,89.902386 H 75.319716"
+         id="path32810" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.880887"
+         x="420.95959"
+         y="353.33069"
+         id="text32814"><tspan
+           sodipodi:role="line"
+           id="tspan32812"
+           x="420.95959"
+           y="353.33069"
+           style="stroke-width:0.880887">Q</tspan></text>
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:4.40444;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 426.9058,294.09617 h 47.54604"
+         id="path32816" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.880887"
+         x="420.95959"
+         y="169.52913"
+         id="text40983"><tspan
+           sodipodi:role="line"
+           id="tspan40981"
+           x="420.95959"
+           y="169.52913"
+           style="stroke-width:0.880887">Q</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is CAD?</title>
+  <link rel="stylesheet" type="text/css" href="/theme.css">
+  <link rel="stylesheet" type="text/css" href="/project-page-styles.css">
+  <!-- If the page needs Math styling: <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script> -->
+  <style>
+    .logo-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <ul id="nav-bar"></ul>
+  <main>
+    <div id="top-bar">
+      <a href="/index.html"><img src="/General-Icons/Home.svg" alt="Home Icon" id="home-icon"></a>
+      <img id="me-icon" src="/ME.jpeg" alt="Icon of me">
+    </div>
+    <ul id="nav-menu"></ul>
+    <h1>What Is CAD?</h1>
+    <div class="image-text-section">
+      <div>
+        <p>
+          CAD stands for Computer Aided Design. CAD software allows you to 
+          design parts with a computer.
+        </p>
+        <p>
+          I use CAD in many of my projects. For example, the 
+          <a href="/Projects/Quadcopter/index.html">Quadcopter</a> 
+          was designed using <a href="/CAD/What-Is-CAD/index.html#onshape">Onshape</a>.
+        </p>
+      </div>
+      <div class="image-text-section" style="display: flex; justify-content: center; flex-direction: column;">
+        <img width="50%" src="/Advanced-Manufacturing/3D-Printing/Hotend Adapter/Prusa-Mini-V6-Hotend-Adapter.webp" alt="Hotend Adapter">
+        <p>
+          3D printer hotend designed in Fusion
+        </p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <h2>CAD softwares</h2>
+    <div id="fusion" class="logo-header">
+      <h3>Autodesk Fusion (previously Fusion 360)</h3>
+      <img width="75px" src="fusion-icon.svg" alt="Fusion Logo">
+    </div> 
+    <div class="image-text-section">
+      <div>
+        <p>
+          Autodesk Fusion allows for you to create parts and assemblies that can be manufactured.
+        </p>
+        <p>
+          Once parts are designed you can switch to the manufacturing workspace and 
+          use Computer Aided Manufacturing (CAM) to create toolpaths for parts to be machined.
+        </p>
+      </div>
+      <div style="display: flex; justify-content: center; flex-direction: column;">
+        <img width="75%" src="/FIRST-Robotics/Seasons/2024/2024-intake.webp" alt="image still needed">
+        <p>
+          2024 Robot Intake I designed in Fusion
+        </p>
+      </div>
+    </div>
+    <img id="onshape" width="200px" src="Onshape-Logo.svg" alt="Onshape Logo">
+    <div class="image-text-section">
+      <div>
+        <p>
+          One of the newer competitors in the CAD software space, 
+          Onshape is run completely through a broswer and all files must be stored 
+          in the cloud.
+        </p>
+        <p>
+          I have personally found that Onshape has much fewer bugs than Fusion. 
+          I have also found the performance is much better especially for large assemblies.
+          Fusion at times has drove me insane because of the lack of performance optimizations. 
+        </p>
+      </div>
+      <img class="image" src="/Projects/Quadcopter/Drone-CAD-Screenshot.webp" alt="Drone CAD">
+    </div>
+    <div class="divider"></div>
+    <img id="kicad" width="200px" src="KiCad-Logo.svg" alt="KiCAD Logo">
+    <div class="image-text-section">
+      <div>
+        <p>
+          KiCAD is a PCB(Printed Circuit Board) design software. It is used to design modern
+          electronic devices that are compact, efficient, and portable.
+        </p>
+        <p>
+          You also can create schematics with it to plan out electric circuits.
+        </p>
+      </div>
+      <div>
+        <img width="100%" src="/Projects/Flip-Flop-Circuit/Flip-Flop-Schematic.png" alt="Flip Flop Circuit Schematic">
+        <p>Schematic from Flip-Flop-Circuit project</p>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+<script src="/nav-bar.js"></script>
+</html>
