@@ -1,0 +1,45 @@
+# Image file types
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.svg
+*.webp
+*.heif
+*.heic
+
+# Raw image file types
+*.raw
+*.cr2
+*.nef
+*.dng
+
+# Adobe file types
+*.psd
+*.ai
+*.indd
+
+# Other image file types
+*.ico
+*.cur
+*.eps
+*.pdf
+*.xcf
+
+# Video file types
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.mkv
+*.flv
+*.webm
+*.mpeg
+*.mpg
+*.ogv
+*.ogg
+*.3gp
+*.m4v
