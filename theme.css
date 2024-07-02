@@ -18,6 +18,9 @@ body {
   object-fit: cover;
   border-radius: 50%; 
 }
+img {
+  user-select: none;
+}
 #top-bar {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -64,6 +67,9 @@ h1 {
 .dropdown-title {
   display: flex;
   align-items: center;
+}
+.dropdown {
+  border: none;
 }
 .dropdown-title img {
   width: 30px;

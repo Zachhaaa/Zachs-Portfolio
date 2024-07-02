@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console Chess</title>
+  <link rel="stylesheet" type="text/css" href="/theme.css">
+  <link rel="stylesheet" type="text/css" href="/project-page-styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/c.min.js"></script>
+
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <div>
+  <ul id="nav-bar"></ul>
+  <main>
+    <div id="top-bar">
+      <a href="/index.html"><img src="/General-Icons/Home.svg" alt="Home Icon" id="home-icon"></a>
+      <img id="me-icon" src="/ME.jpeg" alt="Icon of me">
+    </div>
+    <ul id="nav-menu"></ul>
+    <h1>Console Chess</h1>
+    <img id="thumbnail" src="Console-Chess-Thumbnail.webp" alt="Thumbnail">
+    <h2>The Code</h2>
+    <p>Written in <a href="/Software/C-C++/C-C++-Explained/index.html">C</a>, you can find the code on github <a href="https://github.com/Zachhaaa/console_chess">here</a>.</p>
+    <h2>Code design</h2>
+    <div class="image-text-section">
+      <div>
+        <p>Like all apps we start at the entry point. In C this is the main function.</p>
+        <p>First, we run out startup code which includes writing the user directions and board to the console.</p>
+        <p>After that the board enters the main loop, it:</p>
+        <ol>
+          <li>Gets user input</li>
+          <li>Checks if the input was a valid</li>
+          <li>Moves the piece</li>
+          <li>Draws the board</li>
+          <li>Repeats</li>
+        </ol>
+      </div>
+      <div>
+        <pre><code>
+          int main()
+          {
+            startupMessages();
+  
+            renderBoard();
+            UserInput formattedInput;
+            do
+            {
+              formattedInput = getUserInput();
+  
+              if (formattedInput.charCode != input_success)
+                continue;
+  
+              movePieceReturn movePieceCode = movePiece(formattedInput.start, formattedInput.end);
+              renderMoveOuput(movePieceCode);
+            } while (formattedInput.charCode != quit);
+  
+            return 0;
+          }
+        </code></pre>
+      </div>
+    </div>
+    <div class="image-text-section">
+      <div>
+        <p>
+          Let's take a deeper look at one of these functions, 
+          <span style="color: #ffffa2;">getUserInput</span><span style="color: #79d0ff;">()</span>.
+        </p>
+        <p>Summarizing, getUserInput()</p>
+        <ol>
+          <li>allocates memory for the text input</li>
+          <li>
+            gets the input, and limits the size of the input, 
+            so you don't get what is called a buffer overflow
+          </li>
+          <li>
+            formats the string so it doesn't call "invalid input"
+            if you add an extra space or accidentally capitalize one letter
+          </li>
+          <li>
+            Processes the input and save the coordinates (more checks are done later in the code).
+          </li>
+          <li>
+            Returns the object which includes data about:
+            <ul>
+              <li>the result of the input (either quit, invalid input, or successful input)</li>
+              <li>position of the piece to be moved</li>
+              <li>desired end point of the piece being moved</li>
+            </ul>
+          </li>
+        </ol>
+        <p>
+         One thing you might noticed is we didn't check whether the move was legal, like what if we wanted to move a pawn 3 spaces forward. 
+        </p>
+        <p>Further checks are done in the movePiece command to make sure the user made a valid move.</p>
+      </div>
+      <div>
+        <pre><code>
+          UserInput getUserInput()
+          {
+            UserInput returnVar;
+            char input[INPUT_BUFFER_SIZE];
+  
+            printf("%s's move:\n", activeTurn == WHITE ? "white" : "black");
+            fgets(input, INPUT_BUFFER_SIZE, stdin);
+  
+            removeWhiteSpace(input);
+            tolowerstr(input);
+  
+            returnVar.start.x = input[0];
+            returnVar.start.y = input[1];
+            unsigned char strSize = strlen(input);
+            if (strcmp(input, "resign\n") == 0) 
+            {
+              printf("%s won!\n", activeTurn == BLACK ? "white" : "black");
+              getchar();
+              returnVar.charCode = quit;
+            }
+            else if (input[2] == '>' && strSize == 6) 
+            {
+              returnVar.end.x = input[3];
+              returnVar.end.y = input[4];
+              returnVar.charCode = input_success;
+            }
+            else if (input[2] == 't' && input[3] == 'o' && strSize == 7)
+            {
+              returnVar.end.x = input[4];
+              returnVar.end.y = input[5];
+              returnVar.charCode = input_success;
+            }
+            else
+            {
+              printf("invalid input\n");
+              returnVar.charCode = input_invalidInput;
+            }
+            return returnVar;
+          }
+        </code></pre>
+      </div>
+    </div>
+    <p>
+      Checkout the <a href="https://github.com/Zachhaaa/console_chess">Github page</a> for 
+      this project if you want to see more of the code.
+    </p>
+    <div class="divider"></div>
+    <h2>What I liked about it</h2>
+    <p>
+      I liked managing the code by creating global variables and functions that act 
+      upon those variables to control the game. I personally think that it is much simpler 
+      and easier to understand compared to object oriented models that you may find used in other languages.
+    </p>
+    <h2>What I would do different</h2>
+    <p>
+      I would focus more on sectioning off parts of code to keep the jobs specific and clear.
+      While I did do this by creating functions that each have their own purpose, I sometimes broke this.
+      For example, I checked the validity of the input in both the 
+      <span style="color: #ffffa2;">getUserInput</span><span style="color: #79d0ff;">()</span>
+      and <span style="color: #ffffa2;">movePiece</span><span style="color: #79d0ff;">()</span>
+      functions. It would be better off to put that functionallity into a separate function, group it together, 
+      and put it in the
+      <span style="color: #ffffa2;">getUserInput</span><span style="color: #79d0ff;">()</span> function.
+    </p>
+  </main>
+</div>
+</body>
+<script src="/nav-bar.js"></script>
+</html>

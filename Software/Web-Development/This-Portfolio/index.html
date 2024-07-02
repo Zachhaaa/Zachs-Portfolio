@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This Portfolio Project</title>
+  <link rel="stylesheet" type="text/css" href="/theme.css">
+  <link rel="stylesheet" type="text/css" href="/project-page-styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/html.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/js.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+<body>
+  <div>
+  <ul id="nav-bar"></ul>
+  <main>
+    <div id="top-bar">
+      <a href="/index.html"><img src="/General-Icons/Home.svg" alt="Home Icon" id="home-icon"></a>
+      <img id="me-icon" src="/ME.jpeg" alt="Icon of me">
+    </div>
+    <ul id="nav-menu"></ul>
+    <h1>This Portfolio</h1>
+    <p>Well, in terms of the results, you can easily judge for yourself since this website is the entire project.</p>
+    <p>You can find the source code for this project <a href="https://github.com/Zachhaaa/Zachs-Portfolio">here</a></p>
+    <div class="divider"></div>
+    <h2>How it was built</h2>
+    <div class="image-text-section">
+      <div>
+        <p>At its core this website is built using HTML, CSS, and Javascript.</p>
+        <p>This <a href="/Software/Web-Development/What-is-Web-Dev/index.html">page</a> explains what each of those does if you are so intrigued.</p>
+      </div>
+      <div>
+        <pre><code class="language-html">
+          &lt;a class="card" href="/Projects/Wood-Pen/index.html">
+            &lt;div>
+              &lt;h3>Wood Pen&lt;/h3>
+              &lt;img src="/Projects/Wood-Pen/IMG-3441.jpg" alt="Wood Pen">
+              &lt;p>Includes:&lt;/p>
+              &lt;ul>
+              &lt;li>&lt;span>Woodworking&lt;/span>&lt;/li>
+              &lt;li>&lt;span>Lathes&lt;/span>&lt;/li>
+              &lt;li>&lt;span>Design&lt;/span>&lt;/li>
+              &lt;/ul>
+            &lt;/div>
+          &lt;/a>
+        </code></pre>
+        <p>HTML for one of the project "cards" that you see on the home page.</p>
+      </div>
+    </div>
+    <h2>How it is organized</h2>
+    <div class="image-text-section">
+      <div>
+        <p>
+          As seen on the <a href="https://github.com/Zachhaaa/Zachs-Portfolio">Github</a>, 
+          each page gets its own folder under a very similar file hierarchy found in the 
+          navigation bar. Each page has its own folder to hold the images, icons, and other files
+          associated with that page.
+        </p>
+        <p>However, all pages have some similarities. For example the purple navigation bar.</p>
+        <p>
+          I could just copy and paste the html for the navigation bar into all files, 
+          but this has a major problem.
+        </p>
+        <p>
+          If I ever want to add a project and/or update the navigation bar, I would have to go in and 
+          manually change the code for the navigation bar for EVERY SINGLE FILE, not very time effective.
+        </p>
+      </div>
+      <img class="image" src="Folders.svg" alt="Folders">
+    </div>
+    <div class="image-text-section">
+      <div>
+        <p>
+          To solve this, I create one html file with all the HTML for the navigation bar and then use
+          Javascript to inject that html into the page.
+        </p>
+      </div>
+      <div>
+        <pre><code class="language-js">
+          function navBarMQ() {
+            if (window.innerWidth <= maxWidth) {
+              navBar.innerHTML = '';
+              navBar.style.margin = '0';
+              main.style.width = 'calc(100% - 30px)';
+              main.style.marginLeft = '15px';
+            } else {
+              navBar.innerHTML = navBarHTML;
+              navMenu.innerHTML = ''
+              navBar.style.margin = null;
+              main.style.width = null;
+              main.style.marginLeft = null;
+            }
+            if (window.innerWidth <= maxWidth && !topBarMenuState) {
+              topBar.appendChild(menuIcon)
+              topBarMenuState = true;
+            } else if (window.innerWidth > maxWidth && topBarMenuState){
+              topBar.removeChild(menuIcon);
+              topBarMenuState = false;
+            }
+          }          
+        </code></pre>
+        <p>
+          navBarMQ() is a funcion that is called on page load, and whenever
+          the viewport is resized
+        </p>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <h2>Features you may not Have Noticed</h2>
+    <div class="image-text-section">
+      <div>
+        <p>
+          The website works on other screeen sizes as well, including phones and tablets.
+        </p>
+        <p>Try resizing the window and see how the website responds.</p>
+        <p>Importantly, try varying window widths.</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+</body>
+<script src="/nav-bar.js"></script>
+</html>

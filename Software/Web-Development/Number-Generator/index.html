@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Generator</title>
+  <link rel="stylesheet" type="text/css" href="/theme.css">
+  <link rel="stylesheet" type="text/css" href="/project-page-styles.css">
+  <link rel="stylesheet" href="main-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- If the page needs Math styling: <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script> -->
+   <style>
+      #color-key {
+        display: grid;
+        grid-template-columns: 90px 70px;
+        gap: 4px;
+      }
+      .key-text {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-family: Arial;
+      }
+   </style>
+</head>
+<body>
+  <div>
+  <ul id="nav-bar"></ul>
+  <main>
+    <div id="top-bar">
+      <a href="/index.html"><img src="/General-Icons/Home.svg" alt="Home Icon" id="home-icon"></a>
+      <img id="me-icon" src="/ME.jpeg" alt="Icon of me">
+    </div>
+    <ul id="nav-menu"></ul>
+    <h1>Number Generator</h1>
+    <p>A simple project that uses HTML, CSS, and Javascript.</p>
+    <p>See the code <a href="https://github.com/Zachhaaa/Number-Generator">here</a>.</p>
+    <p>
+      Because it is HTML, CSS and Javascript. All tools that can be 
+      processed by the browser natively. I can inject the results at
+      the bottom of the page so you can easily see them yourself.
+    </p>
+    <p>It really isn't anything complex. It just practices the fundamentals.</p>
+    <div class="divider"></div>
+    <div id="color-key">
+      <div class="key-text">Evens:</div>
+      <div class="elements" style="background-color: rgb(247, 220, 92);"></div>
+      <div class="key-text">Odds:</div>
+      <div class="elements" style="background-color: rgb(91, 188, 122);"></div>
+      <div class="key-text">Primes:</div> 
+      <div class="elements" style="background-color: rgb(235, 105, 91);"></div>
+    </div>
+    <h2>The Number Generator</h2>
+    <div id="content">
+      <div class="header">
+        <div class="title-bar">
+    
+          <img src="hash icon.svg">
+          <h1>Number Generator</h1>
+          <img src="hash icon.svg">
+    
+        </div>
+        <h2>30DaysOfJavascript:DOM Day 23</h2>
+        <h2>Author: Zach Puglia</h2>
+      </div>
+      <div id="wrapper">
+        <p></p>
+        <div class="input-section">
+          <input type="number" placeholder="Number here" id="input-number">
+          <button id="button">Generate</button>
+        </div>
+      </div>
+      <div id="max-num-warning"></div>
+      <div id="grid">
+      </div>
+    
+      <script src="main.js"></script>
+    </div>
+  </main>
+</div>
+</body>
+<script src="/nav-bar.js"></script>
+</html>

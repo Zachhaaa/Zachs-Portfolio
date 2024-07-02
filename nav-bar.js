@@ -1,8 +1,9 @@
 let navBar   = document.getElementById('nav-bar');
-let navMenu  = document.getElementById('nav-menu')
+let navMenu  = document.getElementById('nav-menu');
 let topBar   = document.getElementById('top-bar');
 let menuIcon = document.createElement('img');
 let main = document.querySelector('main');
+let dropdowns;
 
 menuIcon.src = '/General-Icons/Menu.svg';
 menuIcon.style.width = '50px';
@@ -10,7 +11,7 @@ menuIcon.onclick = menuIconClick
 
 let topBarMenuState = false;
 let menuIconState = false;
-let menuItemStates = Array(13).fill(false);
+let menuItemStates;
 let navBarHTML = '';
 
 const maxWidth = 750;
@@ -23,7 +24,15 @@ function navBarMQ() {
     main.style.marginLeft = '15px';
   } else {
     navBar.innerHTML = navBarHTML;
-    navMenu.innerHTML = ''
+
+    dropdowns = document.querySelectorAll('.dropdown');
+    menuItemStates = new Array(dropdowns.length).fill(false);
+    dropdowns.forEach((e, i) => {
+      e.onclick = () => {menuItemClick(i)};
+    });
+      
+    
+    navMenu.innerHTML = '';
     navBar.style.margin = null;
     main.style.width = null;
     main.style.marginLeft = null;
@@ -52,16 +61,23 @@ function menuItemClick(itemNumber) {
   }
 }
 function menuIconClick() {
-  console.log('something')
   if (menuIconState) {
     navMenu.innerHTML = '';
     menuIconState = false;
   } 
   else {
     navMenu.innerHTML = navBarHTML;
+    
+    dropdowns = document.querySelectorAll('.dropdown');
+    menuItemStates = new Array(dropdowns.length).fill(false);
+    dropdowns.forEach((e, i) => {
+      e.onclick = () => {menuItemClick(i)};
+    });
+      
     menuIconState = true; 
   }
 }
+
 
 fetch('/nav-bar.html')
 .then(response => {

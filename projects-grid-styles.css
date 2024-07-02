@@ -1,10 +1,10 @@
-.projects-grid {
+#projects-grid {
   display: grid;
   grid-template-columns: calc(50% - 12px) calc(50% - 12px);
   gap: 24px; 
 }
 @media (max-width: 950px) {
-  .projects-grid {
+  #projects-grid {
     grid-template-columns: 100%;
   }
 }
@@ -35,8 +35,4 @@
 .card ul {
   margin: 0;
   padding-bottom: 15px;
-}
-.card span:hover {
-  text-decoration: underline;
-  color: rgb(88, 192, 226);
 }
