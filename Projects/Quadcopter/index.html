@@ -18,8 +18,82 @@
       </div>
       <ul id="nav-menu"></ul>
       <h1>Quadcopter</h1>
+      <img id="thumbnail" src="Quad-Bat-C.webp">
+      <h2>Parts</h2>
+      <p>To build a drone you need the following parts</p>
+      <ul>
+        <li>Frame</li>
+        <li>Motors</li>
+        <li>Flight Controller</li>
+        <li>Propellers</li>
+        <li>LIPO Battery</li>
+        <li>Radio Transmitter(Controller)</li>
+        <li>Radio Receiver</li>
+      </ul>
+      <div class="divider"></div>
+      <h2>Frame Design</h2>
+      <div class="image-text-section">
+        <div>
+          <p>
+            While you can buy carbon fiber frames online (which honestly are better because 
+            they are extremely strong), I decided to design and 3D print my own for the fun of it.
+          </p>
+          <p>
+            The Arms are separated into 2 parts since my 3D printer can only handle parts that can fit in
+            its 180mm x 180mm x 180 mm build volume.
+          </p>
+          <p><a href="https://cad.onshape.com/documents/866ab9c6caf4ef0d556cf74f/w/afbfc1b3f894fb35a03c55d7/e/7ede20e92695a272f2da970b?renderMode=0&uiState=6685df46be010c2be347819a">CAD Model</a></p>
+        </div>
+        <img class="image" src="Drone-CAD-Screenshot.webp" alt="Quadcopter CAD">
+      </div>
+      <div class="divider"></div>
+      <h2>Electronics</h2>
+      <div class="image-text-section">
+        <div>
+          <p>
+            All of the electronics except for the motors are housed in
+            the center between the battery and the bottom frame.
+          </p>
+        </div>
+        <img class="image" src="Quad-TC.webp" alt="">
+      </div>
+      <div class="divider"></div>
+      <h2>Tuning</h2>
+      <div class="image-text-section">
+        <div>
+          <p>
+            In order for the drone to stay level in the air, I have to tune
+            PID controller which drives the motors when the gyro sensor reports 
+            the angle different from the desired angle.
+          </p> 
+        </div>
+        <img class="image" src="Configurator.webp" alt="Configurator">
+      </div>
+      <div class="divider"></div>
+      <h2>Result</h2>
+      <video style="width: calc(100% - 20px);" src="Quad-Flight.mp4" controls></video>
+      <h2>Speed of the drone</h2>
+      <video style="width: calc(100% - 20px);" src="Quad-Speed.mp4" controls></video>
+      <div class="divider"></div>
+      <h2>Quadcopter Gallery</h2>
+      <div class="collage">
+        <div class="collage-row">
+          <img class="collage-image" width="45%" src="Quad-Bat-T.webp">
+          <img class="collage-image" width="45%" src="Quad-BC.webp">
+        </div>
+        <img class="collage-image" width="75%" src="Quad-C.webp">
+        <img class="collage-image" width="75%" src="Quad-TC.webp">
+      </div>
+      <div class="divider"></div>
+      <h2>Crashed Parts</h2>
+      <p>In total, I crashed the quadcopter 3 times.</p>
+      <div></div>
+      <div class="collage">
+        <img class="collage-image" style="width: calc(100% - 20px);" src="Crashed-Parts.webp">
+      </div>
     </main>
   </div>
 </body>
 <script src="/nav-bar.js"></script>
+
 </html>
