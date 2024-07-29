@@ -6,7 +6,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(15, 15, 15);
 }
 #home-icon {
   width: 50px;
@@ -25,7 +25,8 @@ img {
   margin-top: 15px;
   margin-bottom: 15px;
   display: inline-flex;
-  position: sticky;
+  position: relative;
+  top: 0;
   justify-content: center;
   align-items: center;
   gap: 40px;
