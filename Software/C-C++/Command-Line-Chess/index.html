@@ -31,11 +31,11 @@
     <div class="image-text-section">
       <div>
         <p>Like all apps we start at the entry point. In C this is the main function.</p>
-        <p>First, we run out startup code which includes writing the user directions and board to the console.</p>
-        <p>After that the board enters the main loop, it:</p>
+        <p>First, we run the startup code which includes writing the user directions and board to the console.</p>
+        <p>After that, the board enters the main loop, and it:</p>
         <ol>
           <li>Gets user input</li>
-          <li>Checks if the input was a valid</li>
+          <li>Checks if the input is valid</li>
           <li>Moves the piece</li>
           <li>Draws the board</li>
           <li>Repeats</li>
@@ -73,31 +73,31 @@
         </p>
         <p>Summarizing, getUserInput()</p>
         <ol>
-          <li>allocates memory for the text input</li>
+          <li>Allocates memory for the text input</li>
           <li>
-            gets the input, and limits the size of the input, 
+            Gets the input and limits the size, 
             so you don't get what is called a buffer overflow
           </li>
           <li>
-            formats the string so it doesn't call "invalid input"
+            Formats the string so it doesn't call "invalid input"
             if you add an extra space or accidentally capitalize one letter
           </li>
           <li>
-            Processes the input and save the coordinates (more checks are done later in the code).
+            Processes the input and saves the coordinates (more checks are done later in the code).
           </li>
           <li>
             Returns the object which includes data about:
             <ul>
-              <li>the result of the input (either quit, invalid input, or successful input)</li>
-              <li>position of the piece to be moved</li>
-              <li>desired end point of the piece being moved</li>
+              <li>The result of the input (either quit, invalid input, or successful input)</li>
+              <li>Position of the piece to be moved</li>
+              <li>Desired end point of the piece being moved</li>
             </ul>
           </li>
         </ol>
         <p>
-         One thing you might noticed is we didn't check whether the move was legal, like what if we wanted to move a pawn 3 spaces forward. 
+         One thing you might notice is it didn't check whether the move was legal. What if we wanted to move a pawn 3 spaces forward? 
         </p>
-        <p>Further checks are done in the movePiece command to make sure the user made a valid move.</p>
+        <p>Further checks are done in the movePiece function to make sure the user made a valid move.</p>
       </div>
       <div>
         <pre><code>
@@ -144,7 +144,7 @@
       </div>
     </div>
     <p>
-      Checkout the <a href="https://github.com/Zachhaaa/console_chess" target="_blank">Github page</a> for 
+      Check out the <a href="https://github.com/Zachhaaa/console_chess" target="_blank">Github page</a> for 
       this project if you want to see more of the code.
     </p>
     <div class="divider"></div>
@@ -157,11 +157,11 @@
     <h2>What I would do different</h2>
     <p>
       I would focus more on sectioning off parts of code to keep the jobs specific and clear.
-      While I did do this by creating functions that each have their own purpose, I sometimes broke this.
+      While I did do this by creating functions that each have their own purpose, I sometimes broke this rule.
       For example, I checked the validity of the input in both the 
       <span style="color: #ffffa2;">getUserInput</span><span style="color: #79d0ff;">()</span>
       and <span style="color: #ffffa2;">movePiece</span><span style="color: #79d0ff;">()</span>
-      functions. It would be better off to put that functionallity into a separate function, group it together, 
+      functions. It would be better off to put that functionality into a separate function, group it together, 
       and put it in the
       <span style="color: #ffffa2;">getUserInput</span><span style="color: #79d0ff;">()</span> function.
     </p>
