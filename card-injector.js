@@ -14,6 +14,7 @@ items.forEach((item, i) => {
     numComplete++; 
     if (numComplete === items.length) {
       projectsGrid.innerHTML = itemsHTML.join('');
+      projectsGrid.style.opacity = 1.0;
     }
   })
   .catch(error => {
