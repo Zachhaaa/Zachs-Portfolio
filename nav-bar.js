@@ -67,7 +67,7 @@ function menuIconClick() {
   } 
   else {
     navMenu.innerHTML = navBarHTML;
-    
+    navMenu.style.display = "block";
     dropdowns = document.querySelectorAll('.dropdown');
     menuItemStates = new Array(dropdowns.length).fill(false);
     dropdowns.forEach((e, i) => {
