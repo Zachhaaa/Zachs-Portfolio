@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Viewer 3D</title>
+  <link rel="stylesheet" type="text/css" href="/theme.css">
+  <link rel="stylesheet" type="text/css" href="/project-page-styles.css">
+  <style>
+    #vulkan-logo {
+      height: 24px; 
+      position: relative; 
+      top: 4px; 
+      margin-left: 5px;
+    }
+  </style>
+  <!-- If the page needs Math styling: <script async src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script> -->
+</head>
+<body>
+  <div>
+    <ul id="nav-bar"></ul>
+    <main>
+      <div id="top-bar">
+        <a href="/index.html"><img src="/General-Icons/Home.svg" alt="Home Icon" id="home-icon"></a>
+        <img id="me-icon" src="/ME.webp" alt="Icon of me">
+      </div>
+      <ul id="nav-menu"></ul>
+      <h1>Simple Viewer 3D</h1>
+      <img id="thumbnail" src="SV3Dexample.webp">
+      <p>
+        My largest personal accomplishment so far. 
+        This is a completely functioning app that you can <a href="https://simpleviewer3d.netlify.app/" target="_blank">install</a> on Windows,
+        or you can compile it from <a href="https://github.com/Zachhaaa/SimpleViewer3D" target="_blank">the source code</a>.
+      </p>
+      <div class="divider"></div>
+      <h2>What is it?</h2>
+      <div class="image-text-section">
+        <div>
+          <p>
+            Simple Viewer 3D is a simple, fast, open source, 3D file viewer that can open:
+            <ul>
+              <li>.stl files</li>
+              <li>.obj files</li>
+            </ul>
+          </p>
+        </div>
+        <img class="image" src="Logo.svg" alt="Simple Viewer 3D logo">
+      </div>
+      <div class="divider"></div>
+      <h2>Features</h2>
+      <ul>
+        <li>Open Multiple file in tabs at once</li>
+        <li>Window docking</li>
+        <li>Fast file load times</li>
+        <li>Fast renderer using <img id="vulkan-logo" src="Vulkan_logo.svg" alt="Vulkan"></li>
+      </ul>
+      <img width="100%" src="MultipleWindows.webp">
+      <div class="divider"></div>
+      <h2>Code Design</h2>
+      <p>First lets look at what other code the project depends on. </p>
+      <ul>
+        <li><b>Dear Imgui</b> - GUI (Graphical User Interface) library</li>
+        <li><b>GLM</b> - Math library for transforming the model to be presented on the screen.</li>
+        <li><b>Nanosvg</b> - An svg rasterizing library.</li>
+      </ul>
+      <p>The repository is then organized into 4 sub projects</p>
+      <ul>
+        <li><b>SimpleViewer3D</b> - The main application pictured above. What you get when you use the <a href="https://simpleviewer3d.netlify.app/" target="_blank">installer</a>.</li>
+        <li><b>SimpleViewer3Dinstaller</b> - The installer itself</li>
+        <li><b>SimpleViewer3Dlauncher</b> - Used when you try open a file in the app with the Windows "Open With" menu.</li>
+        <li><b>SimpleViewer3Duninstaller</b> - Runs when you want to uninstall the app on Windows.</li>
+      </ul>
+      <p>
+        The project then has multiple configuration that can be used by the developer to help debug the program. 
+        Some of them include menus to help me debug the program, analyze performance, and style the GUI. 
+      </p>
+      <img width="100%" src="DebugInfo.webp">
+
+    </main>
+  </div>
+</body>
+<script src="/nav-bar.js"></script>
+</html>
